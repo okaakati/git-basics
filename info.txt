@@ -1,1 +1,9 @@
-This is a file containing simple info
+This is a file containing basic git commands and related info
+
+git status		Check status
+git add		Add file to staging area
+git reset HEAD		Unstage file 
+git reset --soft HEAD^		Undo last commit, put changes into staging
+git commit --amend -m "Message"		Change the last commit
+git reset --hard HEAD^		Undo last commit and all changes
+git reset --hard HEAD^^		Undo last 2 commits and all changes
