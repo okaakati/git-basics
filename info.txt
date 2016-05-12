@@ -1,19 +1,28 @@
 This is a file containing basic git commands and related info
 
-git status		Check status
-git add		Add file to staging area
-git remote add WHATEVER https:address		add repository
+git status			Check status
+git add				Add file to staging area
+git remote add WHATEVER http:	add repository
 git commit -m "MESSAGE"		commit changes to local repository
-git push -u WHATEVER master		push changes to master
-git pull		pull changes from repository
+git push -u WHATEVER master	push changes to master
+git pull			pull changes from repository
 
-git clone http://address		clone repository
+git clone http://address	clone repository
+git remote show origin		show all branches and tracking status
+git branch			list branches
+git branch -r			list remote branches
 git branch branchName		create new branch
-git checkout branchName		switch to another branch
+git checkout -b branchName	switch to another branch
+git merge branchName		merge a branch with master
+git branch -d branchName	delete a branch
+git push origin branchName	push branch on remote repository
+
+git tag				list all tags
+git tag -a v0.x.x -m "MEs"	Add new tag
 
 git remote rm <name>		remove remotes
-git reset HEAD		Unstage file 
+git reset HEAD			Unstage file 
 git reset --soft HEAD^		Undo last commit, put changes into staging
-git commit --amend -m "Message"		Change the last commit
+git commit --amend -m "Message"	Change the last commit
 git reset --hard HEAD^		Undo last commit and all changes
 git reset --hard HEAD^^		Undo last 2 commits and all changes
