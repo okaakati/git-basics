@@ -2,6 +2,16 @@ This is a file containing basic git commands and related info
 
 git status		Check status
 git add		Add file to staging area
+git remote add WHATEVER https:address		add repository
+git commit -m "MESSAGE"		commit changes to local repository
+git push -u WHATEVER master		push changes to master
+git pull		pull changes from repository
+
+git clone http://address		clone repository
+git branch branchName		create new branch
+git checkout branchName		switch to another branch
+
+git remote rm <name>		remove remotes
 git reset HEAD		Unstage file 
 git reset --soft HEAD^		Undo last commit, put changes into staging
 git commit --amend -m "Message"		Change the last commit
