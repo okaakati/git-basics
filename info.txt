@@ -2,6 +2,7 @@ This is a file containing basic git commands and related info
 
 git status			Check status
 git add				Add file to staging area
+git rm <files>			Remove files from repository
 git remote add WHATEVER http:	add repository
 git commit -m "MESSAGE"		commit changes to local repository
 git push -u WHATEVER master	push changes to master
@@ -19,6 +20,8 @@ git push origin branchName	push branch on remote repository
 
 git tag				list all tags
 git tag -a v0.x.x -m "MEs"	Add new tag
+git log				view log of commits
+git diff			view changes since last commit
 
 git remote rm <name>		remove remotes
 git reset HEAD			Unstage file 
@@ -26,3 +29,7 @@ git reset --soft HEAD^		Undo last commit, put changes into staging
 git commit --amend -m "Message"	Change the last commit
 git reset --hard HEAD^		Undo last commit and all changes
 git reset --hard HEAD^^		Undo last 2 commits and all changes
+
+git config --global user.name "Name"
+git config --global user.email "email"
+git congig --global alias.<al> <command>
